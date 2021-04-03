@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chhotumaharajsupermarketbusiness">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.ChhotuMaharajCloudKitchen">
+        <activity android:name="com.chhotumaharajsupermarketbusiness.Activity.NavigationActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar" ></activity>
+        <activity android:name="com.chhotumaharajsupermarketbusiness.Activity.PreAnalysisActivity2" />
+        <activity android:name="com.chhotumaharajsupermarketbusiness.Activity.PreAnalysisActivity" />
+        <activity
+            android:name="com.chhotumaharajsupermarketbusiness.Activity.ConceptBusinessActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.chhotumaharajsupermarketbusiness.Activity.QueryActivity"/>
+        <activity android:name="com.chhotumaharajsupermarketbusiness.Activity.FranchiseActivity" />
+        <activity android:name="com.chhotumaharajsupermarketbusiness.Activity.LoginActivity" />
+        <activity android:name="com.chhotumaharajsupermarketbusiness.Activity.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
